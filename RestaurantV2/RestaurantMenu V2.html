@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Menu</title>
-</head>
-<body>
-    <div style="text-align: center">
-        <h1>Richard's BBQ menu</h1>
-    </div>
-    <div style="background-color: lightgray; height: 30px">
-        <p>
-            <a href="RestaurantSite.html">Home</a>
-            <a href="RestaurantMenu.html">Menu</a>
-            <a href="RestaurantContact.html">Contact Us</a>
+<link href="../CSS/RestaurantStyles.css" rel="stylesheet" type="text/css">
 
+<head>
+
+    <title>Menu</title>
+    <div class="divHead">
+        <h1>Richard's BBQ</h1>
+
+    </div>
+    <div class="menuBar">
+        <p>
+            <a href="RestaurantSite V2.html">Home</a>
+            <a href="RestaurantMenu V2.html">Menu</a>
+            <a href="RestaurantContact V2.html">Contact Us</a>
         </p>
     </div>
-    <table style="width: 100%">
+
+    <style type="text/css">
+        table {
+            width: 100%;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        h3 {
+            border-bottom-color: black;
+            border-bottom-style: groove;
+            background-color: gainsboro;
+        }
+        
+        td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
         <tr>
             <td>
                 <p>
                     <h3>Pulled Pork</h3>
-                    <ul style="list-style-type:none">
+                    <ul>
                         <li>Tender pulled pork</li>
-                        <li>North Carolina barbecue sauce (mild, medium and spicy)</li>
+                        <li>Nort Carolina barbecue sauce (mild, medium and spicy)</li>
                         <li>Coleslaw</li>
                         <li>Southern Green Beans</li>
                         <li>$8.95</li>
                     </ul>
                 </p>
             </td>
-
             <td>
+
                 <p>
                     <h3>Beef Brisket</h3>
                     <ul style="list-style-type:none">
-                        <li></li>
                         <li>Smoked beef brisket</li>
                         <li>Kansas City barbecue sauce (mild, medium and spicy)</li>
                         <li>Coleslaw</li>
@@ -55,11 +79,11 @@
                     </ul>
                 </p>
             </td>
-
         </tr>
 
         <tr>
             <td>
+
                 <p>
                     <h3>BBQ Chicken Breast</h3>
                     <ul style="list-style-type:none">
@@ -72,6 +96,7 @@
                 </p>
             </td>
             <td>
+
                 <p>
                     <h3>BBQ Chicken Wings</h3>
                     <ul style="list-style-type:none">
@@ -84,6 +109,7 @@
                 </p>
             </td>
             <td>
+
                 <p>
                     <h3>Honey BBQ Ham</h3>
                     <ul style="list-style-type:none">
@@ -98,16 +124,14 @@
 
     </table>
     <footer>
-        <div style="text-align: center">
+        <div>
 
             <p>
-                900 Friendly Street, My Town, KY 91323<br /><br />
-                502-555-3456
+                900 Friendly Street, My Town, KY 91323<br/><br/> 502-555-3456
             </p>
 
         </div>
     </footer>
 </body>
-</html>
 
-    
+</html>

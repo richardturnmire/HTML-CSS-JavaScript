@@ -1,8 +1,27 @@
 
   
-    .oddRow {
-        background-color: lightgreen;
+    
+
+    .menuBar {
+        background-color: lightblue; height: 30px;
     }
-    .evenRow {
-        background-color: lightskyblue;
+
+    footer {
+        border-top-color: Black;
+        border-top-width: 3px;
+        border-top-style: solid;
+        text-align: center;
+        background-color: lightgray;
     }
+
+    
+
+    h1 {
+        text-align: center;
+        
+    }
+
+    .divHead {
+        background-color: limegreen;
+    }
+    
