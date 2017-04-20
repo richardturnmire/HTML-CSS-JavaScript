@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link href="../CSS/RestaurantStylesV5.css" rel="stylesheet" type="text/css">
+
+
+    <title>Contact Us</title>
+    
+    <style type="text/css">
+        form {
+            text-align: center;
+            background-color: lightsalmon
+        }
+        
+        textarea {
+           
+            height: 150px;
+            vertical-align: top;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    
+<nav class="navbar navbar-default navbar-static-top custom-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed pull-left in" data-toggle="collapse" data-target="#myNavbar">
+                       <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </button>     
+                </div>
+                <div class="collapse navbar-collapse navbar-left" id="myNavbar">
+                    <ul class="nav navbar-nav nav-pills">
+                    
+                        <li>
+                            <a href="RestaurantSite_V5.html">
+                                <span class="glyphicon glyphicon-home"></span>
+                            </a>
+                            <br/>
+                        </li>
+                        <li><a href="RestaurantMenu_V5.html">Menu page</a></li>
+                        <li class="active"><a href="RestaurantContact_V5.html">Contact Us</a></li>
+                        </ul>
+                    
+                </div>
+        </div>
+        </nav>
+   
+       <div class="container-fluid">
+           <h1>Richard's BBQ</h1>
+    <form action="RestaurantContact V5.html" method="POST">
+        <br/>
+        <label for="Name">Name:</label>
+        <input type=text name="txtName" id="Name" /><br/>
+        <label for="Email">Email:</label> <input type=email name="txtEmail" id="Email" /><br/>
+        <label for="Phone">Phone:</label> <input type=tel name="txtPhone" id="Phone" /><br/>
+
+        <p>
+            <Label for="Reason">Reason for Inquiry:</Label>
+            <select name="selectReason" id="Reason">
+                <option value="1">Catering</option>
+                <option value="2">Private Party</option>
+                <option value="3">Feedback</option>
+                <option value="4">Other</option>
+            </select>
+        </p>
+
+        <label for="Infobox">Information:</label>
+        <textarea name="txtAddInfobox" id="Infobox">
+        </textarea>
+        <p>
+            <label for="No">Have you been to the restaurant?:</label>
+            <input type="radio" name=radVisit value="No" id="No" checked/>No
+            <input type="radio" name=radVisit value="Yes" />Yes
+        </p>
+        <p>
+            <label for="Monday">Best days to contact you:</label>
+            <input type="checkbox" name="checkDays" id="Monday" /> M
+            <input type="checkbox" name="checkDays" /> T
+            <input type="checkbox" name="checkDays" /> W
+            <input type="checkbox" name="checkDays" /> Th
+            <input type="checkbox" name="checkDays" /> F
+        </p>
+        <input type="submit" value="Send Request" />
+        <br/>
+        <br/>
+        <footer>
+            <div>
+                <p>
+                    900 Friendly Street, My Town, KY 91323<br/><br/> 502-555-3456
+                </p>
+            </div>
+        </footer>
+</div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

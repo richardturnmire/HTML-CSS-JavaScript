@@ -1,0 +1,58 @@
+a {
+    color: black;
+}
+
+a:visited {
+    color: red;
+}
+ a:hover {
+     font-weight: bold;
+     color: black;
+ } 
+
+
+ a:active {
+     text-decoration: none;
+     color: black;
+ }
+    
+
+.menuBar {
+    background-color: lightblue; 
+    font-size: 24px; 
+    margin: 0%;
+}
+
+
+
+
+
+footer {
+    border-top-color: Black;
+    border-top-width: 3px;
+    border-top-style: solid;
+    text-align: center;
+    background-color: lightgray;
+}
+
+
+
+
+
+h1 {
+    background-color: limegreen;
+    font-family:fantasy;
+       
+        font-style:oblique;
+       
+        margin: 0%;
+      
+    text-align: center;
+    
+}
+
+        #myBodyDiv {
+            text-align: center;
+            background-color: tomato;
+        }
+   
