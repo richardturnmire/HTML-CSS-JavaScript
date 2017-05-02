@@ -1,8 +1,6 @@
 function clearErrors() {
 
-    for (var loopCounter = 0;
-        loopCounter < document.forms["evensForm"].elements.length;
-        loopCounter++) {
+    for (var loopCounter = 0; loopCounter < document.forms["evensForm"].elements.length; loopCounter++) {
         if (document.forms["evensForm"].elements[loopCounter]
             .parentElement.className.indexOf("has-") != -1) {
 
@@ -19,29 +17,20 @@ function resetForm() {
     document.forms["evensForm"]["stepNumber"].value = "";
     document.forms["evensForm"]["startingNumber"].focus();
 }
-function addLine(txtline) {
-   
-   
-        
-    var div = document.getElementById("divOutput");  
-    div.textContent = div.textContent + txtline + "\n";  
-    
-}
 
+function determineEvens(par, startNum, endNum, stepNum) {
 
-function determineEvens(startNum, endNum, stepNum) {
-    document.getElementById("divOutput").textContent = "";
-    addLine("Here are the even numbers between" + startNum + " and " + endNum + " by " + stepNum + "'s: ");
-    for (var i = startNum; i <= endNum; i = stepNum + i) {
+    for (var i = startNum; i <= endNum; i = i + stepNum) {
         if (i % 2 === 0) {
-            addLine(i);
+            par.appendChild(document.createElement('br'));
+            par.appendChild(document.createTextNode(i));
         }
     }
 }
 
 function validateItems() {
     console.log("Begin validating data");
-        clearErrors();
+    clearErrors();
     console.log("Errors cleared");
     var startingNumber = document.forms["evensForm"]["startingNumber"].value;
     var endingNumber = document.forms["evensForm"]["endingNumber"].value;
@@ -93,11 +82,15 @@ function validateItems() {
     }
 
 
-    determineEvens(startingNumber, endingNumber, stepNumber);
 
+    var par = document.createElement("p");
 
+    var strx = "Here are the even numbers between " + startingNumber + " and " + endingNumber + " by " + stepNumber + "'s: ";
+    par.appendChild(document.createTextNode(strx));
 
+    determineEvens(par, startingNumber, endingNumber, stepNumber);
 
+    document.getElementById("divOutput").innerHTML = par.innerHTML;
 
     // We are returning false so that the form doesn't submit 
     // and so that we can see the results
